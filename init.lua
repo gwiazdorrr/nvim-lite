@@ -496,12 +496,12 @@ end
 setup_treesitter()
 
 local function setup_obsidian()
-	if vim.fn.isdirectory(vim.fn.expand("~/Documents/Notes/")) == 0 then
+	if vim.fn.isdirectory(vim.fn.expand("~/Notes/")) == 0 then
 		return
 	end
 	require("obsidian").setup({
 		legacy_commands = false,
-		workspaces = { { name = "Notes", path = vim.fn.expand("~/Documents/Notes/") } },
+		workspaces = { { name = "Notes", path = vim.fn.expand("~/Notes/") } },
 		picker = { name = "fzf-lua" },
 	})
 
