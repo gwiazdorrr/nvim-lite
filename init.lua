@@ -525,7 +525,7 @@ local function setup_obsidian()
   vim.keymap.set("n", "<leader>nw", "<cmd>Obsidian workspace<cr>",    { desc = "Switch workspace" })
 end
 
-setup_obsidian()
+--setup_obsidian()
 
 require("nvim-tree").setup({
 	view = {
