@@ -438,7 +438,10 @@ vim.pack.add({
 	"https://github.com/obsidian-nvim/obsidian.nvim",
 	"https://github.com/mrcjkb/rustaceanvim",
 	"https://github.com/christoomey/vim-tmux-navigator",
+  { src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
 })
+
+vim.cmd.colorscheme("catppuccin-mocha")
 
 -- ============================================================================
 -- PLUGIN CONFIGS
